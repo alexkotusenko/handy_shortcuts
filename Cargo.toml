@@ -2,7 +2,7 @@
 name = "handy_shortcuts"
 version = "0.1.0"
 edition = "2021"
-license = "GPLv3"
+license = "GPL-3.0"
 authors = ["Alex Kotusenko <alexkotusenko.dev@gmail.com>"]
 readme = "notes/README.md"
 keywords = ["tools", "shortcuts", "utilities"]
