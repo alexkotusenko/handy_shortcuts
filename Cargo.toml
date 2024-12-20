@@ -3,6 +3,10 @@ name = "handy_shortcuts"
 version = "0.1.0"
 edition = "2021"
 license = "GPLv3"
-
+authors = "Alex Kotusenko <alexkotusenko.dev@gmail.com>"
+readme = "notes/README.md"
+keywords = ["tools", "shortcuts", "utilities"]
+description = "A handy toolbox for things like substring finding, working with indexes and other string manipulation things"
+homepage = ""
 
 [dependencies]
