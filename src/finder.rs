@@ -1,4 +1,4 @@
-fn find_all_occurrences(input: &str, looking_for: &str) -> Vec<usize> {
+pub fn find_all_occurrences(input: &str, looking_for: &str) -> Vec<usize> {
     let mut indexes: Vec<usize> = Vec::new();
     let mut remover = input;
     let mut index_shift_val = 0;
@@ -16,7 +16,7 @@ fn find_all_occurrences(input: &str, looking_for: &str) -> Vec<usize> {
     indexes
 }
 
-fn find_nth_occurrence(input: &str, looking_for: &str, n: u32) -> Option<usize> {
+pub fn find_nth_occurrence(input: &str, looking_for: &str, n: u32) -> Option<usize> {
     let mut exhauster = input;
     let mut erased_count = 0;
     let mut i: u32 = 0;
@@ -43,7 +43,7 @@ fn find_nth_occurrence(input: &str, looking_for: &str, n: u32) -> Option<usize> 
     }
 }
 
-fn find_nth_occurrence_bounds(input: &str, looking_for: &str, n: u32) -> Option<(usize, usize)> {
+pub fn find_nth_occurrence_bounds(input: &str, looking_for: &str, n: u32) -> Option<(usize, usize)> {
     let starting_index: Option<usize> = find_nth_occurrence(input, looking_for, n);
     match starting_index {
         Some(v) => {
@@ -55,7 +55,7 @@ fn find_nth_occurrence_bounds(input: &str, looking_for: &str, n: u32) -> Option<
     }
 }
 
-fn get_string_in_bounds(input: &str, bounds: (usize, usize)) -> Result<&str, &str> {
+pub fn get_string_in_bounds(input: &str, bounds: (usize, usize)) -> Result<&str, &str> {
     // check for bound validity
     if bounds.1 < bounds.0 {
         return Err("Error: the first bound cannot be bigger");
