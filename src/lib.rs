@@ -1,2 +1,2 @@
-mod finder;
-mod os;
+pub mod finder;
+pub mod os;
