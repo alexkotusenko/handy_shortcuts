@@ -1,3 +1,5 @@
+//! Shortcuts for working with strings & substrings
+
 pub fn find_all_occurrences(input: &str, looking_for: &str) -> Vec<usize> {
     let mut indexes: Vec<usize> = Vec::new();
     let mut remover = input;
